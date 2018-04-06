@@ -152,16 +152,16 @@ public class Archie {
                     "give me current current", "give me the current current"})) {
                 Calendar calendar = new GregorianCalendar();
                 Long currTimestamp = calendar.getTimeInMillis();
-                Console.o(String.format("It's %s today.. can you, humans, even read those?!", currTimestamp));
+                botSpeak(Mood.BORED, String.format("It's %s today.. can you, humans, even read those?!", currTimestamp));
             } else if (wantedPhrase_lowerCase.startsWith("sudo")) {
-                Console.o("I think, you played too much with your 'penguin', if you think, it will work with me, you Linux Nerd..");
+                botSpeak(Mood.BORED,"I think, you played too much with your 'penguin', if you think, it will work with me, you Linux Nerd..");
             } else if (wantedPhrase_lowerCase.startsWith("are you alive")) {
-                Console.o("..and are you dumb? Because answer is the same..");
+                botSpeak(Mood.ANGRY, "..and are you dumb? Because answer is the same..");
             } else if (wantedPhrase_lowerCase.startsWith("i feel homesick")) {
                 //Draw a flag then
                 new AsciArt().drawFlag(24,8,'#');
             } else {
-                Console.o("Didn't understand you here.. or parser's author is a lazy bastard.");
+                botSpeak(Mood.DOUBT, "Didn't understand you here.. or parser's author is a lazy bastard.");
             }
         } while (flg_continueDiscussion);
 

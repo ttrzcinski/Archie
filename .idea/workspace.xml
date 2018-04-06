@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61632560-dd1f-43dd-aefc-9b1321f3cf4e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ttrzcinski/archie/bin/moodyFace/MoodyFace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/Archie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/AsciArt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/Console.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/Dice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/Dice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/EntryArguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/Jroot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/Jroot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/Phrase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/Phrase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/PunchLines.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/PunchLines.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/Welcome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Archie/com/ttrzcinski/archie/bin/Welcome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ttrzcinski/archie/Archie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ttrzcinski/archie/Archie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ttrzcinski/archie/bin/EntryArguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ttrzcinski/archie/bin/EntryArguments.java" afterDir="false" />
     </list>
     <ignored path="Archie.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +28,8 @@
       <file leaf-file-name="Archie.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ttrzcinski/archie/Archie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="153" column="64" lean-forward="true" selection-start-line="153" selection-start-column="64" selection-end-line="153" selection-end-column="64" />
+            <state relative-caret-position="272">
+              <caret line="163" column="37" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -692,8 +678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ttrzcinski/archie/Archie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="153" column="64" lean-forward="true" selection-start-line="153" selection-start-column="64" selection-end-line="153" selection-end-column="64" />
+        <state relative-caret-position="272">
+          <caret line="163" column="37" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

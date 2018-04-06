@@ -54,5 +54,24 @@ public class EntryArguments {
         this.args = null;
     }
 
+    /**
+     * Checks, if arguments list has an argument with given name.
+     *
+     * @param name given name
+     * @return true, if contains, false otherwise
+     */
+    public boolean hasArgument(String name) {
+        boolean contains = false;
+        if (this.args != null) {
+            for (String arg : this.args) {
+                if (arg.equalsIgnoreCase(name)) {
+                    contains = true;
+                    break;
+                }
+            }
+        }
+        return contains;
+    }
+
     //Accessors
 }

@@ -1,10 +1,12 @@
 package com.ttrzcinski.archie;
 
 import com.ttrzcinski.archie.bin.*;
+import com.ttrzcinski.archie.bin.moodyFace.MoodyFace;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+
+import static com.ttrzcinski.archie.bin.moodyFace.MoodyFace.*;
 
 /**
  * Represents a very sarcastic almost-AI interface.
@@ -18,7 +20,29 @@ public class Archie {
      */
     private static EntryArguments entryArguments;
 
+    /**
+     * Marks flag of using moody faces.
+     */
+    private static boolean useMoodyFaces;
+    /**
+     * Draws different face moods of bot.
+     */
+    private static MoodyFace moodyFace;
+
     //Inner Methods
+
+    /**
+     * Method used to output messages with moody icon representing the emotion connected with that message.
+     * @param mood      pointed mood
+     * @param message   given message
+     */
+    private static void botSpeak(Mood mood, String message) {
+        if (useMoodyFaces) {
+            moodyFace.drawFaceWithMessage(mood, message);
+        } else {
+            Console.o(message);
+        }
+    }
 
     /**
      * Call to run Archie. It welcomes parameters.
@@ -42,18 +66,26 @@ public class Archie {
             Console.o("Hmm.. no 'arguments given'.. What a lazy user are you..");
         }
 
-        Console.o("So what's your name, eh?");
+        //Should I turn off the moody faces?
+        useMoodyFaces = true;
+        moodyFace = new MoodyFace();
+        if (entryArguments.hasArgument("no-moody-faces")) {
+            useMoodyFaces = false;
+        }
+
+        botSpeak(Mood.DOUBT, "So what's your name, eh?");
         String gottenName = Console.i();
         if (gottenName == null) {
-            Console.o("..if you don't wanna talk, why don't you fuck off?!");
+            botSpeak(Mood.ANGRY, "..if you don't wanna talk, why don't you fuck off?!");
             return;
         } else {
-            Console.o("Well.. " + gottenName + ". Parents must've really hate you, if you got name, like that.");
+            botSpeak(Mood.BORED, "Well.. " + gottenName +
+                    ". Parents must've really hate you, if you got name, like that.");
         }
 
         //Finally, let's go with the questions
         boolean flg_continueDiscussion = true;
-        Console.o("Although.. you wanted something?");
+        botSpeak(Mood.DOUBT,"Although.. you wanted something?");
 
 //        //----------------------------
 //        do {
@@ -84,23 +116,23 @@ public class Archie {
             Phrase phrase = new Phrase(wantedPhrase_lowerCase);
             if (phrase.startsWithAnyOf(new String[]{"what is the sense", "sense of",
                     "give me the sense"})) {
-                Console.o("There is no sense.. Next?");
-            }  else if (phrase.containsAny(new String[]{"stop", "end", "done", "finito",
+                botSpeak(Mood.BORED,"There is no sense.. Next?");
+            }  else if (phrase.containsAny(new String[]{"no", "stop", "end", "done", "finito",
                     "go home", "return 0", "exit", "quit", "CTRL + Q", ":qw!", "end"},
                     wantedPhrase_lowerCase)) {
-                Console.o("It was too intelligent for you, huh?");
+                botSpeak(Mood.HAPPY,"It was too intelligent for you, huh?");
                 flg_continueDiscussion = false;
             } else if (wantedPhrase_lowerCase.startsWith("simon says ")) {
-                Console.o(wantedPhrase_lowerCase.substring(11) + "..");
+                botSpeak(Mood.SAD,wantedPhrase_lowerCase.substring(11) + "..");
                 //Randomize an punch-line
                 int optionNum = new Dice(3).roll();
                 switch (optionNum) {
                     case 1:
-                        Console.o("..What am I? Some Alexa or Siri?");
+                        Console.o("..What am I? Some Alexa or other Siri?");
                         break;
 
                     case 2:
-                        Console.o("..Alexa.. add rope to hang myself to my shopping list.");
+                        Console.o("..Alexa.. add hanging rope to my shopping list.");
                         break;
 
                     case 3:
@@ -115,7 +147,7 @@ public class Archie {
                     "current date", "give me current date"})) {
                 Calendar calendar = new GregorianCalendar();
                 String currDate = calendar.getTime().toString();
-                Console.o(String.format("It's %s today.. if you believe JVM.", currDate));
+                botSpeak(Mood.SAD, String.format("It's %s today.. if you believe JVM.", currDate));
             } else if (phrase.startsWithAnyOf(new String[]{"what is current timestamp", "current timestamp",
                     "give me current current", "give me the current current"})) {
                 Calendar calendar = new GregorianCalendar();

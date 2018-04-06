@@ -1,10 +1,6 @@
-package com.ttrzcinski.archie.bin.moodyFace;
+package com.ttrzcinski.archie.bin.moodyface;
 
 import com.ttrzcinski.archie.bin.Console;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class MoodyFace {
     /**

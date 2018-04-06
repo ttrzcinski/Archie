@@ -1,4 +1,6 @@
-package com.ttrzcinski.archie.bin;
+package com.ttrzcinski.archie.bin.items;
+
+import com.ttrzcinski.archie.bin.Console;
 
 import java.text.MessageFormat;
 import java.util.Random;

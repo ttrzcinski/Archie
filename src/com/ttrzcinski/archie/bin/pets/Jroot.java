@@ -1,4 +1,4 @@
-package com.ttrzcinski.archie.bin;
+package com.ttrzcinski.archie.bin.pets;
 
 /**
  * Created by theadmin on 13.10.17.

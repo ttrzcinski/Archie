@@ -1,12 +1,13 @@
 package com.ttrzcinski.archie;
 
 import com.ttrzcinski.archie.bin.*;
-import com.ttrzcinski.archie.bin.moodyFace.MoodyFace;
+import com.ttrzcinski.archie.bin.items.Dice;
+import com.ttrzcinski.archie.bin.moodyface.MoodyFace;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import static com.ttrzcinski.archie.bin.moodyFace.MoodyFace.*;
+import static com.ttrzcinski.archie.bin.moodyface.MoodyFace.*;
 
 /**
  * Represents a very sarcastic almost-AI interface.

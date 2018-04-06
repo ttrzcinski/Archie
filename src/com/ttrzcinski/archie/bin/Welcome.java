@@ -1,5 +1,7 @@
 package com.ttrzcinski.archie.bin;
 
+import com.ttrzcinski.archie.bin.items.Dice;
+
 /**
  * Represents a welcoming sign for user, that Archie is alive.
  *
